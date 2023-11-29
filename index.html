@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="
+    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    >
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+           
+            <ul id="sidemenu">
+                <li > <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <img src="" alt="">
+        <div class="header-text">
+            <p >Java Web Developer</p>
+<h1 class="one" >Hi, I'm <span>Pradhyum Vijayvergiya</span> </h1>
+
+        </div>
+    </div>
+</div>
+<div  id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="user.png" >
+        </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello, My name is Pradhyum Vijayvergiya I am a B.sc graduate in Computer Science from Vikram University,
+                        Mandsaur, Madhya Pradesh with 6.5 CGPA. I am a Java Developer with
+                         experience in utilizing various technologies such as Core Java, MYSQL, 
+                         Servlet, JSP. I am proficient in using tools such as Eclipse and Netbeans.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                    
+                    </div>
+                    <div class="tab-contents active-tab "id="Skills">
+                        <ul>
+                            <li><span>HTML, CSS, JS, BOOTSTRAP</span></li>
+                            <li><span>CORE JAVA</span></li>
+                            <li><span>ADVANCE JAVA </span></li>
+                            <li><span>SPRING & SPRINGBOOT</span></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Core Java</h2>
+                <p>Core Java is the fundamental concept of the Java programming language. It is a subset of Java SE technologies that contains libraries and other technology to develop general desktop apps, Windows GUI applications, and enterprise applications. It is based on the object-oriented programming </p>
+                <a href="/">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Advanced Java</h2>
+                <p>Advanced Java is the collection of technologies and tools that enable developers to create dynamic and secure applications, including features such as JDBC (Java Database Connectivity), Servlets, and JSP (JavaServer Page) are being used for generating and making interactive dynamic content, the most important feature of advanced</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Spring Framework</h2>
+                <p>The Spring framework can be considered as a collection of sub-frameworks, also called layers, such as Spring AOP. Spring Object-Relational Mapping (Spring ORM). Spring Web Flow, and Spring Web MVC. It is a lightweight application framework used for developing enterprise applications.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.
+                    </p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world
+                         Download it from playstore.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>9340908782</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkdin.com/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="my resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Youe Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ <i class="fas fa-heart"></i> Pradhyumvijayvergiya</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
